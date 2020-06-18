@@ -171,9 +171,9 @@ public class AccountController {
 	}
 
 	public boolean delete(HttpSession session, int id) {
-		List<User> acctUsers = uas.findUserByAccount(id);
+		List<User> acc_use = uas.findUserByAccount(id);
 		Set<Integer> userIds = new HashSet<>();
-		for (User u : acctUsers) {
+		for (User u : acc_use) {
 			userIds.add(u.getUserId());
 		}
 		// allow Employee and Admin access

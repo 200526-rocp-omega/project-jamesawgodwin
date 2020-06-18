@@ -208,4 +208,10 @@ public class UserDAO implements IUserDAO {
         return null;
     }
 
+	@Override
+	public User update(int id, User u) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
