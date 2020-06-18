@@ -22,7 +22,7 @@ public class Driver {
 		IUserDAO dao = new UserDAO();
 		
 		// for ID use 0 as ID when adding new db records
-		User testUser = new User(0, "username", "password44", "first", "last", "email@email.com", new Role(1, "Standard"));
+		User testUser = new User(0, "username2", "employee2", "first", "last", "username2@email.com", new Role(2, "Premium"));
 		System.out.println(dao.insert(testUser));
 		
 		for(User u : dao.findAll()) {

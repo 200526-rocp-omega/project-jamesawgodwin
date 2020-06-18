@@ -19,5 +19,7 @@ public interface IUserDAO {
 	
 	public int delete (int id); //DELETE
 
+	public User update(int id, User u);
+
 
 }
